@@ -1,0 +1,10 @@
+[versions]
+kotlin-jvm-version = "1.6.21"
+kotlinx-serialization-core-version = "1.3.3"
+
+[libraries]
+kotlinx-serialization-core= { module = "org.jetbrains.kotlinx:kotlinx-serialization-core-jvm", version.ref = "kotlinx-serialization-core-version" }
+
+[plugins]
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin-jvm-version"}
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin-jvm-version"}
